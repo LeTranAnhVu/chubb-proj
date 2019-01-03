@@ -1,0 +1,24 @@
+<section class="canhcam-home-abvantages">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<h2 class="home-title">Ưu điểm bảo hiểm Online</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-6 col-lg-4 item" *ngFor="let item of abvantagehome">
+				<figure>
+					<div class="boximg">
+						<img src="{{item.src}}" alt="" srcset="">
+					</div>
+					<figcaption>
+						<h3 *ngIf="item.title">
+							{{item.title}}
+						</h3>
+						<p *ngIf="item.description">{{item.description}}</p>
+					</figcaption>
+				</figure>
+			</div>
+		</div>
+	</div>
+</section>

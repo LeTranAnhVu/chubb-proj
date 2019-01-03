@@ -1,0 +1,51 @@
+/////////////////////////
+///////Include//////////
+@import '../../sass/var'
+////////////////////////
+
+
+.thutuc
+	+pad(rem(50px) 0)
+	.content-container
+		.content-box
+			.title
+				font-size: 1.9rem
+				font-weight: normal
+				border-bottom: rem(2px) solid $xanh-la
+				padding-bottom: rem(9px)
+				margin-bottom: rem(20px)
+			&:nth-child(2)
+				.title
+					border-color: #ff0198
+			&:nth-child(3)
+				.title
+					border-color: #150f96
+			&:nth-child(4)
+				.title
+					border-color: #ffb617
+			&:nth-child(5)
+				.title
+					border-color: #6d27c5
+			&:nth-child(6)
+				.title
+					border-color: #ff6600
+			h3 
+				+fw(600)
+				+fz(1.15rem)
+				margin-bottom: rem(20px)
+			p 
+				+fz(rem(14px))
+				color: #323232
+				+fw(400)
+				margin-bottom: 1.1rem
+			@media screen and(min-width: 768px)
+				margin-bottom: rem(40px)
+				&:last-child
+					margin-bottom: 0
+				.title
+					font-size: rem(30px)
+				h3 
+					+fz(rem(18px))
+				p
+					+fz(rem(16px))
+					margin-bottom: rem(20px)

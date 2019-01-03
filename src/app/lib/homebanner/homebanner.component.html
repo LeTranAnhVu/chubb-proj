@@ -1,0 +1,75 @@
+<section class="canhcam-home-banner">
+	<ngb-carousel>
+		<ng-template ngbSlide *ngFor="let banner of bannerhome ; let i = index">
+			<img src="{{banner.src}}">
+			<div class="carousel-caption">
+				<div class="title">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="title-wrap">
+									<h3 *ngIf="banner.title" [innerHTML]="banner.title">
+									</h3>
+									<p *ngIf="banner.description" [innerHTML]="banner.description"></p>
+									<a *ngIf="banner.url" href="{{banner.url}}">Tìm hiểu thêm </a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</ng-template>
+		<!-- <ng-template ngbSlide>
+			<img [src]="images[1]" alt="Random second slide">
+			<div class="carousel-caption">
+				<div class="title">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="title-wrap">
+									<h3>
+										
+									</h3>
+									<p>
+										
+									</p>
+									<a href="">Tìm hiểu thêm </a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</ng-template>
+		<ng-template ngbSlide>
+			<img [src]="images[2]" alt="Random third slide">
+			<div class="carousel-caption">
+				<div class="title">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<div class="title-wrap">
+									<h3>
+										Chỉ mất vài phút để được
+										<br>
+										bảo vệ dài lâu
+									</h3>
+									<p>
+										Tự tin chinh phục mọi mục tiêu!
+									</p>
+									<a href="">Tìm hiểu thêm </a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</ng-template> -->
+	</ngb-carousel>
+</section>

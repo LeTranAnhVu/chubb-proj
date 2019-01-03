@@ -1,0 +1,24 @@
+{
+  "name": "chubb-code",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Nguyen Sang <nnsang24@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "k-sass-core": "^6.0.4",
+    "bootstrap": "^4.2.1",
+    "mdi": "^3.2.89",
+    "font-awesome": "^5.6.3",
+    "linearicons": "^1.0.1"
+  }
+}
